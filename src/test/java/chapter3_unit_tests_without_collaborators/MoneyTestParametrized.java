@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
+import static junitparams.JUnitParamsRunner.$;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
@@ -14,7 +14,8 @@ public class MoneyTestParametrized {
 	
 	private static final Object[] getMoney() {
 		return new Object[] {
-				new Object[] {10, "USD"},
+				//method that puts all passed values into an Object[]
+				$(10, "USD"),
 				new Object[] {20, "EUR"}
 		};
 	}
