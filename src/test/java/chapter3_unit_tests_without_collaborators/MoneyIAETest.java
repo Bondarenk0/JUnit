@@ -1,6 +1,5 @@
 package chapter3_unit_tests_without_collaborators;
 
-import static org.junit.Assert.*;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,6 +12,7 @@ public class MoneyIAETest {
 	private final static int VALID_AMOUNT = 5;
 	private final static String VALID_CURRENCY = "USD";
 	
+	@SuppressWarnings("unused")
 	private static final Object[] getInvalidAmount(){
 		return new Integer[] [] {{-12387}, {-5}, {-1}};
 	}
@@ -23,6 +23,7 @@ public class MoneyIAETest {
 		new Money(invalidAmount, VALID_CURRENCY);
 	}
 	
+	@SuppressWarnings("unused")
 	private static final Object[] getInvalidCurrency() {
 		return new String[][] {{null}, {""}};
 	}
