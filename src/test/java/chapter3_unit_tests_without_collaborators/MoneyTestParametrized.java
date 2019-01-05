@@ -12,6 +12,7 @@ import junitparams.Parameters;
 @RunWith(JUnitParamsRunner.class)
 public class MoneyTestParametrized {
 	
+	@SuppressWarnings("unused")
 	private static final Object[] getMoney() {
 		return new Object[] {
 				//method that puts all passed values into an Object[]

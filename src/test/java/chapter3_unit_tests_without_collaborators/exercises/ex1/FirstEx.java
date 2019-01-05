@@ -1,4 +1,4 @@
-package chapter3_unit_tests_without_collaborators.excercises.ex1;
+package chapter3_unit_tests_without_collaborators.exercises.ex1;
 
 import static org.junit.Assert.*;
 
